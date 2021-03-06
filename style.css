@@ -76,6 +76,10 @@ a{
     width:855px !important;
     height: 180px impor !important;
 }
+.log{
+    width: 100px !important;
+    height: 100px !important;
+}
 @media(max-width:1700px){
     .content > img{
         width:700px;
