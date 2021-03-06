@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: url('/images/landing.jpg');
+    background-size: cover;
+}
+.container{
+    width:97%;
+    margin-left: auto;
+    display: flex;
+    height: 100%;
+
+}
+.content{
+    width:50%;
+   
+}
+.circle{
+    width:50%;
+    background:#e1dbea;
+    clip-path: circle(66.1% at 68% 50%);
+    position: relative;
+    
+}
+.content > img{
+    width:812px;
+    height: 769;
+    position: absolute;
+    top:20%;
+    right: calc(50% - 600px);
+    z-index:2;
+}
+.content-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+.content-container h2{
+    color:white;
+    font-size: 47px;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Rajdhani', sans-serif; 
+    margin: 15px 0;
+}
+.content-container img{
+    width:512px;
+    height: 113px;
+}
+a{
+    background:#ffc100;
+    color:white;
+    padding:20px 55px;
+    border-radius: 15px;
+    margin-left: 30px;
+    font-family: 'Rajdhani', sans-serif; 
+    font-size: 25px;
+    text-decoration: none;
+}
+.link-container{
+    margin-top: 55px;
+   
+}
+.earth{
+    position: absolute;
+    bottom: 0;
+    width:855px !important;
+    height: 180px impor !important;
+}
+@media(max-width:1700px){
+    .content > img{
+        width:700px;
+        height: 650px;
+    
+    }
+    .circle{
+        clip-path: circle(80.1% at 100% 50%);
+    }
+}
+@media (max-width:1280px) {
+       .circle{
+           display: none;
+       }
+       .content{
+           width:100%
+       }
+       .content > img{
+           display: none;
+       }
+       .content-container img{
+           width:450px;
+
+       }
+}
